@@ -1,0 +1,118 @@
+.main-swiper {
+  overflow: visible;
+  margin-left: 30px;
+  width: 768px;
+
+  @include xl-desktop {
+    width: 698px;
+  }
+
+  @include mm-desktop {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  @include mobile {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    padding-top: 75.93%;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 5;
+    width: 200%;
+    background-color: $colorBG;
+    height: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transform: translateX(-100%);
+  }
+
+  .swiper-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    .swiper-slide {
+      user-select: none;
+
+      img {
+        text-align: center;
+        position: relative;
+        vertical-align: middle;
+
+        &:after, &:before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 20px;
+          height: 20px;
+          font-size: 0;
+          background-color: $colorBG;
+        }
+      }
+    }
+  }
+
+  .main-navigation {
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    justify-content: space-between;
+    align-items: center;
+    left: 0;
+    bottom: 0;
+    width: 100px;
+    font-size: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    border-radius: 0 5px 5px 5px;
+
+    @include mobile {
+      width: 76px;
+    }
+
+    .main-swiper-prev, .main-swiper-next {
+      margin: 0;
+      position: relative;
+      left: auto;
+      right: auto;
+      top: auto;
+      bottom: auto;
+      width: 50%;
+
+      .icon {
+        width: 10px;
+        height: 20px;
+
+        @include mobile {
+          width: 8px;
+          height: 16px;
+        }
+      }
+
+      &:after {
+        display: none;
+      }
+    }
+
+    .nav-divider {
+      display: block;
+      width: 1px;
+      height: 20px;
+      background-color: rgba(255, 255, 255, 0.4);;
+    }
+  }
+}

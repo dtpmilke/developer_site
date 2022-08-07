@@ -1,0 +1,115 @@
+@import "variables";
+
+.h1-main {
+  font-family: $fontBase;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 55px;
+  color: $black;
+  margin: 20px 0;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include mobile {
+    font-size: 32px;
+    line-height: 35px;
+  }
+}
+
+.h1-pages {
+  @extend .h1-main;
+  font-size: 60px;
+  line-height: 76px;
+
+  @include mobile {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+.h2-pages {
+  @extend .h1-main;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 52px;
+}
+
+
+.h3-pages {
+  @extend .h1-main;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.h4-pages {
+  @extend .h1-main;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.h5-pages {
+  @extend .h1-main;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.extra-body-24 {
+  font-family: $fontAccent;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: $black;
+  margin: 0 0 30px 0;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include mobile {
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+.extra-body-18 {
+  @extend .extra-body-24;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height, or 27px */
+}
+
+.body-16 {
+  @extend .extra-body-24;
+  font-size: 16px;
+  line-height: 24px;
+
+  @include mobile {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+.body-14 {
+  @extend .extra-body-24;
+  font-size: 14px;
+  line-height: 22px;
+}
+

@@ -1,0 +1,96 @@
+.field {
+  display: block;
+  position: relative;
+  z-index: 3;
+  margin: 0 0 20px !important;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include mobile {
+    margin-bottom: 15px !important;
+  }
+
+  .label {
+    display: block;
+    position: absolute;
+    z-index: 3;
+    left: 15px;
+    top: -4px;
+    font-size: 12px;
+    line-height: 1em;
+    font-weight: 400;
+    color: $white;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    transition: all .1s ease;
+    background-color: $baseColor;
+    padding-left: 3px;
+    padding-right: 3px;
+
+    &:after {
+      content: "";
+      color: red;
+    }
+  }
+
+  .error-message {
+    display: none;
+    margin: 5px 0 0 0;
+    font-size: 12px;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: $white;
+  }
+
+  .input-text {
+    display: block;
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    padding: 15px;
+    width: 100%;
+    height: 46px;
+    background: transparent;
+    border: 1px solid $white;
+    font-family: $fontAccent;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: $white;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+    transition: all .2s ease;
+
+    @include mobile {
+      padding: 12px 10px;
+    }
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  &.empty {
+    .label {
+      top: 16px;
+      font-size: 16px;
+      line-height: 1em;
+      color: $white;
+      background-color: transparent;
+    }
+  }
+
+  &.error {
+    .error-message {
+      display: block;
+    }
+  }
+}

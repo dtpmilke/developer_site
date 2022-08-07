@@ -1,0 +1,26 @@
+/**
+ * Variables
+*/
+$fontBase: 'Gilroy', sans-serif;
+$fontAccent: 'Nunito Sans', sans-serif;
+
+$black: #000000;
+$white: #ffffff;
+$baseColor: #E6214C;
+$baseColorHover: #D0113B;
+$secondColor: $black;
+$secondColor10Percent: transparentize($secondColor, .9);
+$secondColor50Percent: transparentize($secondColor, .5);
+$baseColor10Percent: transparentize($baseColor, .9);
+$baseColor15Percent: transparentize($baseColor, .85);
+$colorGray: #666666;
+$colorGray2: #CCCCCC;
+$colorGray3: #AAAAAA;
+$colorGray4: #707070;
+$colorWhatsapp: #25D366;
+$colorWhatsappHover: #19C75A;
+$colorTelegram: #229ED9;
+$colorTelegramHover: #178AC0;
+$black333: #333333;
+$colorBG: #F8F8F8;
+/* Components */

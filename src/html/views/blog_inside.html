@@ -1,0 +1,126 @@
+<% var data = {
+title: "Developer Site"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<section class="section breadcrumbs blog-inside-theme">
+    <div class="container">
+        <a href="#" class="link">Home</a>
+        <a href="#" class="link">Blog</a>
+        <div class="link active">Post 1</div>
+        <a href="#" class="link back">Back</a>
+    </div>
+</section>
+
+<section class="section no-padding-top blog-inside-theme padding-bottom-x2">
+    <div class="container">
+        <h1 class="h1">The Italian place where you don't eat 'Italian' food</h1>
+        <div class="blog-inside-item">
+            <div class="main-img lozad" data-background="./img/photos/blog_inside.png"></div>
+            <div class="content-list opened">
+                <div class="c-heading">
+                    <div class="title">Content</div>
+                    <div class="icon"></div>
+                </div>
+                <div class="inner-content">
+                    <ol class="list">
+                        <li>Point 1</li>
+                        <li>Point 2
+                            <ol>
+                                <li>Point 2.1</li>
+                                <li>Point 2.2</li>
+                            </ol>
+                        </li>
+                        <li>Point 3. The idea is to offer a slower kind of tourism, that attracts a different, more thoughtful kind of tourist — someone who's more likely to appreciate the food, or attend the Trasimeno Music Festival, held every July.</li>
+                    </ol>
+                </div>
+            </div>
+            <p class="only-text">Editor's Note — Tune in this Sunday at 9pm ET as "Stanley Tucci: Searching for Italy" explores Umbria, Italy. Tucci sampled the traditional cuisine from wild boar and slow-cooked pork to pigeon. Warning vegetarians: This episode contains a lot of meat.</p>
+            <div class="title-with-text">
+                <div class="h3">The 'Rimini of Umbria'</div>
+                <p class="extra-body-18 text">
+                    Today, Lake Trasimeno is a peaceful place, square in the middle of the country, far from the madding crowds of Italy's beach resorts.
+                </p>
+                <p class="extra-body-18 text">
+                    But 50 years ago, says professor Daniele Parbuono, an anthropologist at the nearby University of Perugia, things looked very different.
+                </p>
+            </div>
+            <div class="block-with-icon">
+                <p class="text no-margin-bottom">Today, a cooperative of 70 fishermen work on the lake, says Valter Sembolini, vice president of the Cooperativa Pescatori del Trasimeno. It was founded in 1928, but times weren't always so good.</p>
+                <span class="author">Elon Musk</span>
+                <div class="icon lozad" data-background="./img/icon/quote_icon.png"></div>
+            </div>
+            <div class="block-with-icon">
+                <p class="text no-margin-bottom">Some useful link</p>
+                <a href="/" class="link">www.google.com</a>
+                <div class="icon lozad" data-background="./img/icon/link_icon.png"></div>
+            </div>
+            <div class="small-margin-text">
+                <p class="extra-body-18">
+                    "The contadini didn't want to have anything to do with the fishermen and vice versa," says Parbuono.
+                </p>
+                <p class="extra-body-18">
+                    "A peasant's biggest fear would be to marry their daughter to a fisherman, and the fisherman's biggest fear would be the same."
+                </p>
+                <p class="extra-body-18">
+                    The divide between the two communities living side by side bled into their eating styles. Fish from the lake was sold in Perugia and as far as Rome, even in ancient Roman times. But those who lived lakeside were less interested.
+                </p>
+            </div>
+            <div class="only-text">
+                <h3 class="h3">Quality not quantity</h3>
+                <ul class="check-list point-list">
+                    <li>Point 1</li>
+                    <li>Point 2</li>
+                    <li>Point 3. The idea is to offer a slower kind of tourism, that attracts a different, more thoughtful kind of tourist — someone who's more likely to appreciate the food, or attend the Trasimeno Music Festival, held every July.</li>
+                </ul>
+            </div>
+
+            <div class="only-text">
+                <h3 class="h3">Bullets</h3>
+                <ul class="check-list">
+                    <li>Bullet 1</li>
+                    <li>Bullet 2</li>
+                    <li>Bullet 3. The idea is to offer a slower kind of tourism, that attracts a different, more thoughtful kind of tourist — someone who's more likely to appreciate the food, or attend the Trasimeno Music Festival, held every July.</li>
+                </ul>
+            </div>
+
+            <div class="only-text">
+                <h3 class="h3">Numerated list</h3>
+                <ul class="check-list number-list">
+                    <li>Number 1</li>
+                    <li>Number 2</li>
+                    <li>Number 3. The idea is to offer a slower kind of tourism, that attracts a different, more thoughtful kind of tourist — someone who's more likely to appreciate the food, or attend the Trasimeno Music Festival, held every July.</li>
+                </ul>
+            </div>
+
+            <div class="stepper">
+                <h3 class="h3">Step-by-step</h3>
+                <ul class="check-list number-list step-list">
+                    <li>Step 1</li>
+                    <li>Step 2</li>
+                    <li>Step 3. The idea is to offer a slower kind of tourism, that attracts a different, more thoughtful kind of tourist — someone who's more likely to appreciate the food, or attend the Trasimeno Music Festival, held every July.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="padding-bottom-x2"></div>
+        <h2 class="h2 margin-bottom-heading">Read also</h2>
+        <div class="flex-grid tablet-wrap">
+            <div class="col w-50-desktop w-50-tablet flex-direction-column">
+                <a href="#" class="blog-card">
+                    <div class="photo lozad" data-background="./img/photos/blog.png"></div>
+                    <div class="date">DECEMBER 06, 2021</div>
+                    <div class="name">Agency is the capacity of an actor to act in a given</div>
+                </a>
+            </div>
+            <div class="col w-50-desktop w-50-tablet flex-direction-column">
+                <a href="#" class="blog-card">
+                    <div class="photo lozad" data-background="./img/photos/blog.png"></div>
+                    <div class="date">DECEMBER 06, 2021</div>
+                    <div class="name">What to do a year before buying apartment</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

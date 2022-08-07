@@ -1,0 +1,139 @@
+.faq-item {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #EEEEEE;
+
+  &:last-of-type {
+    border: 0;
+
+    @include desktop {
+      margin-bottom: 0;
+    }
+  }
+
+  @include mobile {
+    margin-bottom: 15px;
+  }
+
+  &.opened {
+    .f-heading {
+      .icon {
+        background-color: $baseColor10Percent;
+
+        .cross {
+          .line {
+            &:first-child {
+              background-color: $baseColor;
+            }
+
+            &:last-child {
+              transform: translateX(-50%) scale(0);
+            }
+          }
+        }
+      }
+    }
+
+    .inner-content {
+      display: block;
+    }
+  }
+
+  .f-heading {
+    display: block;
+    position: relative;
+    z-index: 5;
+    padding-bottom: 15px;
+    cursor: pointer;
+
+    @include mobile {
+      padding-bottom: 10px;
+    }
+
+    @include desktop {
+      &:hover {
+        .name {
+          color: $baseColor;
+        }
+      }
+    }
+
+    .name {
+      @extend .h4;
+      color: $black;
+      margin: 0;
+      padding-right: 45px;
+      transition: color .2s ease-in-out;
+
+      @include only-mobile {
+        max-width: 210px;
+        padding-right: 0;
+      }
+    }
+
+    .icon {
+      display: flex;
+      position: absolute;
+      right: 0;
+      top: calc(50% - 10px);
+      margin-top: -15px;
+      z-index: 5;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+
+      @include mobile {
+        width: 20px;
+        height: 20px;
+        top: calc(50% - 10px);
+        margin-top: -10px;
+      }
+
+      .cross {
+        width: 18px;
+        height: 18px;
+        display: block;
+        position: absolute;
+
+        @include mobile {
+          width: 12px;
+          height: 12px;
+        }
+
+        .line {
+          display: block;
+          position: absolute;
+          background-color: $black;
+          transition: transform .2s ease-in-out, color .2s ease-in-out;
+
+          &:first-child {
+            top: 50%;
+            height: 1.84px;
+            width: 100%;
+            transform: translateY(-50%) scale(1);
+
+            @include mobile {
+              height: 1.23px;
+            }
+          }
+
+          &:last-child {
+            left: 50%;
+            width: 1.84px;
+            height: 100%;
+            transform: translateX(-50%);
+
+            @include mobile {
+              width: 1.23px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .inner-content {
+    display: none;
+    padding-bottom: 15px;
+  }
+}

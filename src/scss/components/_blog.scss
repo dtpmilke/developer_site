@@ -1,0 +1,63 @@
+.blog-card {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  cursor: pointer;
+
+  @include desktop {
+    &:hover {
+      .name {
+        color: $baseColor;
+      }
+    }
+  }
+
+  .photo {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #C4C4C4;
+
+    @include mobile {
+      margin-bottom: 10px;
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      padding-top: 47.36%;
+
+      @include mobile {
+        padding-top: 72.83%;
+      }
+    }
+  }
+
+  .date {
+    margin: 10px 0;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: $colorGray;
+    font-family: $fontAccent;
+
+    @include mobile {
+      font-size: 8px;
+      line-height: 11px;
+      margin: 5px 0;
+    }
+  }
+
+  .name {
+    @extend .h3;
+    font-family: $fontBase;
+    color: $black;
+    margin: 0;
+    transition: color .2s ease-in-out;
+  }
+}

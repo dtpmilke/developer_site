@@ -1,0 +1,666 @@
+<% var data = {
+title: "Developer Site"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<section class="section breadcrumbs">
+    <div class="container">
+        <a href="#" class="link">Home</a>
+        <a href="#" class="link">Buy Apartments</a>
+        <div class="link active">Emaar</div>
+    </div>
+</section>
+
+<section class="section no-padding-top">
+    <div class="container">
+        <div class="flex-grid">
+            <div class="col w-70-desktop w-100-mobile flex-direction-column">
+                <div class="heading-with-image">
+                    <div class="heading">
+                        <h1 class="h1">Emaar</h1>
+                    </div>
+                    <div class="h-image">
+                        <img class="lozad" data-src="./img/logos/emaar.svg" alt="EMAAR" width="268" height="268">
+                    </div>
+                </div>
+                <div class="small-margin-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <p> The experience and commitment to rewarding landowners with their dream architectural developments has made them earn trust within and beyond borders.</p>
+                    <p>The experience and commitment to rewarding landowners with their dream architectural developments has made them earn trust within and beyond borders.</p>
+                </div>
+            </div>
+            <div class="col w-30-desktop flex-direction-column justify-content-center hide-mobile">
+                <div class="developer-img">
+                    <img class="lozad" data-src="./img/logos/emaar.svg" alt="EMAAR" width="268" height="268">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section no-padding featured-section">
+    <div class="container">
+        <h2 class="h2 margin-bottom-heading">Top offers</h2>
+
+        <div class="featured-slider hide-only-mobile">
+            <div class="swiper featured-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="featured-card">
+                            <div class="photo">
+                                <div class="photo-bg lozad" data-background="./img/photos/test.png"></div>
+                                <div class="badges">
+                                    <div class="badge theme-green">HANDOVER 4Q 2025</div>
+                                </div>
+                                <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <div class="info-block">
+                                <div class="price-and-location">
+                                    <a href="#" class="price">From $450,000</a>
+                                    <a href="#" class="location">Jumeirah Lakes Towers</a>
+                                </div>
+                                <a href="#" class="name">Luxury villa</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="featured-card">
+                            <div class="photo">
+                                <div class="photo-bg lozad" data-background="./img/photos/test.png"></div>
+                                <div class="badges">
+                                    <div class="badge theme-green">HANDOVER 4Q 2025</div>
+                                </div>
+                                <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <div class="info-block">
+                                <div class="price-and-location">
+                                    <a href="#" class="price">From $450,000</a>
+                                    <a href="#" class="location">Jumeirah Lakes Towers</a>
+                                </div>
+                                <a href="#" class="name">Luxury villa</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="featured-card">
+                            <div class="photo">
+                                <div class="photo-bg lozad" data-background="./img/photos/test.png"></div>
+                                <div class="badges">
+                                    <div class="badge theme-green">HANDOVER 4Q 2025</div>
+                                </div>
+                                <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <div class="info-block">
+                                <div class="price-and-location">
+                                    <a href="#" class="price">From $450,000</a>
+                                    <a href="#" class="location">Jumeirah Lakes Towers</a>
+                                </div>
+                                <a href="#" class="name">Luxury villa</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="featured-card">
+                            <div class="photo">
+                                <div class="photo-bg lozad" data-background="./img/photos/test.png"></div>
+                                <div class="badges">
+                                    <div class="badge theme-green">HANDOVER 4Q 2025</div>
+                                </div>
+                                <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <div class="info-block">
+                                <div class="price-and-location">
+                                    <a href="#" class="price">From $450,000</a>
+                                    <a href="#" class="location">Jumeirah Lakes Towers</a>
+                                </div>
+                                <a href="#" class="name">Luxury villa</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="featured-card">
+                            <div class="photo">
+                                <div class="photo-bg lozad" data-background="./img/photos/test.png"></div>
+                                <div class="badges">
+                                    <div class="badge theme-green">HANDOVER 4Q 2025</div>
+                                </div>
+                                <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <div class="info-block">
+                                <div class="price-and-location">
+                                    <a href="#" class="price">From $450,000</a>
+                                    <a href="#" class="location">Jumeirah Lakes Towers</a>
+                                </div>
+                                <a href="#" class="name">Luxury villa</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev">
+                <svg class="icon" width="10px" height="20px">
+                    <use xlink:href="./img/icon/sprite.svg#arrow_l2"></use>
+                </svg>
+            </div>
+            <div class="swiper-button-next">
+                <svg class="icon" width="10px" height="20px">
+                    <use xlink:href="./img/icon/sprite.svg#arrow_r2"></use>
+                </svg>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="featured-list hide-desktop hide-only-tablet">
+            <div class="featured-card">
+                <div class="photo">
+                    <div class="photo-bg lozad" data-background="./img/photos/test.png"></div>
+                    <div class="badges">
+                        <div class="badge theme-green">HANDOVER 4Q 2025</div>
+                    </div>
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
+                <div class="info-block">
+                    <div class="price-and-location">
+                        <a href="#" class="price">From $450,000</a>
+                        <a href="#" class="location">Jumeirah Lakes Towers</a>
+                    </div>
+                    <a href="#" class="name">Luxury villa</a>
+                </div>
+            </div>
+
+            <div class="featured-card">
+                <div class="photo">
+                    <div class="photo-bg lozad" data-background="./img/photos/test.png"></div>
+                    <div class="badges">
+                        <div class="badge theme-green">HANDOVER 4Q 2025</div>
+                    </div>
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
+                <div class="info-block">
+                    <div class="price-and-location">
+                        <a href="#" class="price">From $450,000</a>
+                        <a href="#" class="location">Jumeirah Lakes Towers</a>
+                    </div>
+                    <a href="#" class="name">Luxury villa</a>
+                </div>
+            </div>
+
+            <div class="featured-card">
+                <div class="photo">
+                    <div class="photo-bg lozad" data-background="./img/photos/test.png"></div>
+                    <div class="badges">
+                        <div class="badge theme-green">HANDOVER 4Q 2025</div>
+                    </div>
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
+                <div class="info-block">
+                    <div class="price-and-location">
+                        <a href="#" class="price">From $450,000</a>
+                        <a href="#" class="location">Jumeirah Lakes Towers</a>
+                    </div>
+                    <a href="#" class="name">Luxury villa</a>
+                </div>
+            </div>
+
+            <div class="text-align-center">
+                <a href="#" class="button no-margin-top inline theme-main">See more</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section no-padding-top">
+    <div class="container">
+        <h2 class="h2 margin-bottom-heading">Apartments by Emaar</h2>
+
+        <div class="developers-list">
+            <div class="developer-card">
+                <div class="info-block">
+                    <div class="top-block">
+                        <div class="name-with-location">
+                            <div class="name">Peninsula Three</div>
+                            <a href="#" class="location">Jumeirah Lakes Towers, Dubai, UAE</a>
+                        </div>
+                        <div class="payment">
+                            <div class="from">Down payment</div>
+                            <div class="value">from 50 000 AED</div>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  dsfdsfdsfdsf</p>
+
+                    </div>
+
+                    <div class="props">
+                        <div class="h-props">
+                            AVAILABLE PROPERTIES IN PINENSULLA
+                        </div>
+                        <div class="item">
+                            <div class="name">1 bedroom appartment</div>
+                            <div class="value">
+                                from <span>4 mln AED</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="name">2 bedroom appartment</div>
+                            <div class="value">
+                                from <span>1,6 mln AED</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="name">3 bedroom appartment</div>
+                            <div class="value">
+                                from <span>500 000 AED</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="name">Penthouse</div>
+                            <div class="value">
+                                from <span>10 mln AED</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-block lozad" data-background="./img/photos/developer.png">
+                    <div class="badges">
+                        <div class="badge">HANDOVER 4Q 2025</div>
+                    </div>
+                </div>
+            </div>
+            <div class="developer-card">
+                <div class="info-block">
+                    <div class="top-block">
+                        <div class="name-with-location">
+                            <div class="name">MAG 5</div>
+                            <a href="#" class="location">Jumeirah Lakes Towers, Dubai, UAE</a>
+                        </div>
+                        <div class="payment">
+                            <div class="from">Down payment</div>
+                            <div class="value">from 50 000 AED</div>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  dsfdsfdsfdsf</p>
+
+                    </div>
+
+                    <div class="props">
+                        <div class="h-props">
+                            AVAILABLE PROPERTIES IN PINENSULLA
+                        </div>
+                        <div class="item">
+                            <div class="name">1 bedroom appartment</div>
+                            <div class="value">
+                                from <span>4 mln AED</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-block lozad" data-background="./img/photos/developer.png">
+                    <div class="badges">
+                        <div class="badge">HANDOVER 4Q 2025</div>
+                    </div>
+                </div>
+            </div>
+            <div class="developer-card">
+                <div class="info-block">
+                    <div class="top-block">
+                        <div class="name-with-location">
+                            <div class="name">Peninsula Three</div>
+                            <a href="#" class="location">Jumeirah Lakes Towers, Dubai, UAE</a>
+                        </div>
+                        <div class="payment">
+                            <div class="from">Down payment</div>
+                            <div class="value">from 50 000 AED</div>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  dsfdsfdsfdsf</p>
+
+                    </div>
+
+                    <div class="props">
+                        <div class="h-props">
+                            AVAILABLE PROPERTIES IN PINENSULLA
+                        </div>
+                        <div class="item">
+                            <div class="name">1 bedroom appartment</div>
+                            <div class="value">
+                                from <span>4 mln AED</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="name">2 bedroom appartment</div>
+                            <div class="value">
+                                from <span>1,6 mln AED</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="name">3 bedroom appartment</div>
+                            <div class="value">
+                                from <span>500 000 AED</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="name">Penthouse</div>
+                            <div class="value">
+                                from <span>10 mln AED</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-block lozad" data-background="./img/photos/developer.png">
+                    <div class="badges">
+                        <div class="badge">HANDOVER 4Q 2025</div>
+                    </div>
+                </div>
+            </div>
+            <div class="developer-card">
+                <div class="info-block">
+                    <div class="top-block">
+                        <div class="name-with-location">
+                            <div class="name">Peninsula Three</div>
+                            <a href="#" class="location">Jumeirah Lakes Towers, Dubai, UAE</a>
+                        </div>
+                        <div class="payment">
+                            <div class="from">Down payment</div>
+                            <div class="value">from 50 000 AED</div>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  dsfdsfdsfdsf</p>
+
+                    </div>
+
+                    <div class="props">
+                        <div class="h-props">
+                            AVAILABLE PROPERTIES IN PINENSULLA
+                        </div>
+                        <div class="item">
+                            <div class="name">1 bedroom appartment</div>
+                            <div class="value">
+                                from <span>4 mln AED</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="name">2 bedroom appartment</div>
+                            <div class="value">
+                                from <span>1,6 mln AED</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="name">3 bedroom appartment</div>
+                            <div class="value">
+                                from <span>500 000 AED</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="name">Penthouse</div>
+                            <div class="value">
+                                from <span>10 mln AED</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-block lozad" data-background="./img/photos/developer.png">
+                    <div class="badges">
+                        <div class="badge">HANDOVER 4Q 2025</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section no-padding-top">
+    <div class="container">
+        <h2 class="h2 margin-bottom-heading">Villas by Emaar</h2>
+
+        <div class="developers-list">
+            <div class="developer-card">
+                <div class="info-block">
+                    <div class="top-block">
+                        <div class="name-with-location">
+                            <a href="#" class="name">Peninsula Three</a>
+                            <a href="#" class="location">Jumeirah Lakes Towers, Dubai, UAE</a>
+                        </div>
+                        <div class="payment">
+                            <div class="from">Down payment</div>
+                            <a href="#" class="value">from 50 000 AED</a>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  dsfdsfdsfdsf</p>
+
+                    </div>
+
+                    <div class="props">
+                        <div class="h-props">
+                            AVAILABLE PROPERTIES IN PINENSULLA
+                        </div>
+                        <a href="#" class="item">
+                            <div class="name">1 bedroom appartment</div>
+                            <div class="value">
+                                from <span>4 mln AED</span>
+                            </div>
+                        </a>
+                        <a href="#" class="item">
+                            <div class="name">2 bedroom appartment</div>
+                            <div class="value">
+                                from <span>1,6 mln AED</span>
+                            </div>
+                        </a>
+                        <a href="#" class="item">
+                            <div class="name">3 bedroom appartment</div>
+                            <div class="value">
+                                from <span>500 000 AED</span>
+                            </div>
+                        </a>
+                        <a href="#" class="item">
+                            <div class="name">Penthouse</div>
+                            <div class="value">
+                                from <span>10 mln AED</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="image-block lozad" data-background="./img/photos/developer.png">
+                    <div class="badges">
+                        <div class="badge">HANDOVER 4Q 2025</div>
+                    </div>
+                </div>
+            </div>
+            <div class="developer-card">
+                <div class="info-block">
+                    <div class="top-block">
+                        <div class="name-with-location">
+                            <a href="#" class="name">MAG 5</a>
+                            <a href="#" class="location">Jumeirah Lakes Towers, Dubai, UAE</a>
+                        </div>
+                        <div class="payment">
+                            <div class="from">Down payment</div>
+                            <a href="#" class="value">from 50 000 AED</a>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  dsfdsfdsfdsf</p>
+
+                    </div>
+
+                    <div class="props">
+                        <div class="h-props">
+                            AVAILABLE PROPERTIES IN PINENSULLA
+                        </div>
+                        <a href="#" class="item">
+                            <div class="name">1 bedroom appartment</div>
+                            <div class="value">
+                                from <span>4 mln AED</span>
+                            </div>
+                        </a>
+                        <a href="#" class="item">
+                            <div class="name">2 bedroom appartment</div>
+                            <div class="value">
+                                from <span>1,6 mln AED</span>
+                            </div>
+                        </a>
+                        <a href="#" class="item">
+                            <div class="name">3 bedroom appartment</div>
+                            <div class="value">
+                                from <span>500 000 AED</span>
+                            </div>
+                        </a>
+                        <a href="#" class="item">
+                            <div class="name">Penthouse</div>
+                            <div class="value">
+                                from <span>10 mln AED</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="image-block lozad" data-background="./img/photos/developer.png">
+                    <div class="badges">
+                        <div class="badge">HANDOVER 4Q 2025</div>
+                    </div>
+                </div>
+            </div>
+            <div class="developer-card">
+                <div class="info-block">
+                    <div class="top-block">
+                        <div class="name-with-location">
+                            <a href="#" class="name">Peninsula Three</a>
+                            <a href="#" class="location">Jumeirah Lakes Towers, Dubai, UAE</a>
+                        </div>
+                        <div class="payment">
+                            <div class="from">Down payment</div>
+                            <a href="#" class="value">from 50 000 AED</a>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  dsfdsfdsfdsf</p>
+
+                    </div>
+
+                    <div class="props">
+                        <div class="h-props">
+                            AVAILABLE PROPERTIES IN PINENSULLA
+                        </div>
+                        <a href="#" class="item">
+                            <div class="name">1 bedroom appartment</div>
+                            <div class="value">
+                                from <span>4 mln AED</span>
+                            </div>
+                        </a>
+                        <a href="#" class="item">
+                            <div class="name">2 bedroom appartment</div>
+                            <div class="value">
+                                from <span>1,6 mln AED</span>
+                            </div>
+                        </a>
+                        <a href="#" class="item">
+                            <div class="name">3 bedroom appartment</div>
+                            <div class="value">
+                                from <span>500 000 AED</span>
+                            </div>
+                        </a>
+                        <a href="#" class="item">
+                            <div class="name">Penthouse</div>
+                            <div class="value">
+                                from <span>10 mln AED</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="image-block lozad" data-background="./img/photos/developer.png">
+                    <div class="badges">
+                        <div class="badge">HANDOVER 4Q 2025</div>
+                    </div>
+                </div>
+            </div>
+            <div class="developer-card">
+                <div class="info-block">
+                    <div class="top-block">
+                        <div class="name-with-location">
+                            <a href="#" class="name">Peninsula Three</a>
+                            <a href="#" class="location">Jumeirah Lakes Towers, Dubai, UAE</a>
+                        </div>
+                        <div class="payment">
+                            <div class="from">Down payment</div>
+                            <a href="#" class="value">from 50 000 AED</a>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  dsfdsfdsfdsf</p>
+
+                    </div>
+
+                    <div class="props">
+                        <div class="h-props">
+                            AVAILABLE PROPERTIES IN PINENSULLA
+                        </div>
+                        <a href="#" class="item">
+                            <div class="name">1 bedroom appartment</div>
+                            <div class="value">
+                                from <span>4 mln AED</span>
+                            </div>
+                        </a>
+                        <a href="#" class="item">
+                            <div class="name">2 bedroom appartment</div>
+                            <div class="value">
+                                from <span>1,6 mln AED</span>
+                            </div>
+                        </a>
+                        <a href="#" class="item">
+                            <div class="name">3 bedroom appartment</div>
+                            <div class="value">
+                                from <span>500 000 AED</span>
+                            </div>
+                        </a>
+                        <a href="#" class="item">
+                            <div class="name">Penthouse</div>
+                            <div class="value">
+                                from <span>10 mln AED</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="image-block lozad" data-background="./img/photos/developer.png">
+                    <div class="badges">
+                        <div class="badge">HANDOVER 4Q 2025</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section gray">
+    <div class="container">
+        <h2 class="h2 text-align-center">Search property smarter, quicker & anywhere</h2>
+        <div class="video-block">
+            <iframe width="100%" height="100%" class="lozad" data-src="https://www.youtube.com/embed/RksE_BqtqSc"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <h3 class="h3 text-align-center">We’ve been enhancing homes and commercial spaces.</h3>
+    </div>
+</section>
+
+<section class="section padding-bottom-x2">
+    <div class="container">
+        <div class="chess-block">
+            <div class="flex-grid tablet-wrap">
+                <div class="col w-50-desktop flex-direction-column justify-content-center">
+                    <div class="text-item">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque eleifend donec pretium vulputate sapien nec sagittis. Proin libero nunc consequat interdum. Condimentum lacinia quis vel eros donec ac. Mauris sit amet massa vitaLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque eleifend donec pretium vulputate sapien nec sagittis. Proin libero nunc consequat interdum. Condimentum lacinia quis vel eros donec ac. Mauris sit amet massa vitaee</p>
+                    </div>
+                </div>
+                <div
+                        class="col w-50-desktop flex-direction-column justify-content-center align-items-end order-top-mobile no-padding-bottom-mobile">
+                    <div class="image-item lozad" data-background="./img/photos/night.jpg">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

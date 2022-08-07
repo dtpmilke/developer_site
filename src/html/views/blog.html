@@ -1,0 +1,67 @@
+<% var data = {
+title: "Developer Site"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<section class="section breadcrumbs">
+    <div class="container">
+        <a href="#" class="link">Home</a>
+        <div class="link active">Blog</div>
+    </div>
+</section>
+
+<section class="section no-padding-top">
+    <div class="container">
+        <h1 class="h1">Blog</h1>
+        <div class="flex-grid wrap">
+            <div class="col w-50-desktop w-50-tablet flex-direction-column">
+                <div class="blog-card">
+                    <div class="photo lozad" data-background="./img/photos/blog.png"></div>
+                    <span class="date">december 06, 2021</span>
+                    <p class="name">Agency is the capacity of an actor to act in a given</p>
+                </div>
+            </div>
+            <div class="col w-50-desktop w-50-tablet flex-direction-column">
+                <div class="blog-card">
+                    <div class="photo lozad" data-background="./img/photos/blog.png"></div>
+                    <span class="date">december 06, 2021</span>
+                    <p class="name">What to do a year before buying apartment</p>
+                </div>
+            </div>
+            <div class="col w-50-desktop w-50-tablet flex-direction-column">
+                <div class="blog-card">
+                    <div class="photo lozad" data-background="./img/photos/blog.png"></div>
+                    <span class="date">december 06, 2021</span>
+                    <p class="name">The most inspiring interior</p>
+                </div>
+            </div>
+            <div class="col w-50-desktop w-50-tablet flex-direction-column">
+                <div class="blog-card">
+                    <div class="photo lozad" data-background="./img/photos/blog.png"></div>
+                    <span class="date">december 06, 2021</span>
+                    <p class="name">Agency is the capacity of an actor to act in a given</p>
+                </div>
+            </div>
+            <div class="col w-50-desktop w-50-tablet flex-direction-column">
+                <div class="blog-card">
+                    <div class="photo lozad" data-background="./img/photos/blog.png"></div>
+                    <span class="date">december 06, 2021</span>
+                    <p class="name">What to do a year before buying apartment</p>
+                </div>
+            </div>
+            <div class="col w-50-desktop w-50-tablet flex-direction-column">
+                <div class="blog-card">
+                    <div class="photo lozad" data-background="./img/photos/blog.png"></div>
+                    <span class="date">december 06, 2021</span>
+                    <p class="name">The most inspiring interior</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-align-center">
+            <div class="button theme-main inline">Download more</div>
+        </div>
+    </div>
+</section>
+
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

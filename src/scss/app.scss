@@ -1,0 +1,51 @@
+/* By Athlon Front-End Team */
+
+/* Core variables */
+@import 'base/variables';
+
+/* CSS Reset */
+@import 'base/reset';
+
+/* Fonts */
+@import 'base/fonts';
+
+/* Mixins, helpers and functions */
+@import 'base/base';
+@import 'base/flex-grid';
+@import 'base/mediaqueries';
+@import 'base/extends';
+@import 'base/typographic';
+@import 'base/helper';
+
+/* Vendor */
+@import 'node_modules/swiper/swiper';
+@import 'node_modules/swiper/modules/pagination/pagination';
+@import 'node_modules/swiper/modules/navigation/navigation';
+@import 'node_modules/swiper/modules/lazy/lazy';
+
+:root {
+  --swiper-theme-color: #E6214C;
+}
+
+/* Components */
+@import "components/header";
+@import "components/footer";
+@import "components/buttons";
+@import "components/socials";
+@import "components/badge";
+@import "components/main-swiper";
+@import "components/featured_cards";
+@import "components/breadcrumbs";
+@import "components/team-cards";
+@import "components/clippy-image";
+@import "components/check-list";
+@import "components/developer";
+@import "components/chess-block";
+@import "components/project";
+@import "components/blog";
+@import "components/blog-inside";
+@import "components/faq";
+@import "components/discount-form";
+@import "components/inputs";
+@import "components/contacts";
+

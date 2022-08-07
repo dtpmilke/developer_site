@@ -1,0 +1,233 @@
+.blog-inside-item {
+  .main-img {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #C4C4C4;
+
+    &:before {
+      content: '';
+      display: block;
+      padding-top: 56.22%;
+
+      @include mobile {
+        padding-top: 72.83%;
+      }
+    }
+  }
+
+  .content-list {
+    margin: 40px 0;
+    padding: 30px 40px 15px 40px;
+    border-radius: 5px;
+    box-shadow: 8px 14px 80px rgba(0, 0, 0, 0.08);
+
+    @include mobile {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    &.opened {
+      .c-heading {
+        .icon {
+          transform: rotate(180deg);
+        }
+      }
+
+      .inner-content {
+        display: block;
+      }
+    }
+
+    .inner-content {
+      display: none;
+    }
+
+    .c-heading {
+      display: block;
+      position: relative;
+      z-index: 5;
+      cursor: pointer;
+
+      .title {
+        @extend .h3;
+        margin: 0;
+        padding-bottom: 15px;
+
+        @include mobile {
+          font-size: 24px;
+          line-height: 30px;
+          padding-bottom: 9px;
+        }
+      }
+
+      .icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 24px;
+        height: 24px;
+        background-image: url('../img/icon/arrow_2.svg');
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+
+  .list {
+    @extend .body-16;
+    color: #133DA9;
+    counter-reset: list1;
+    font-weight: 400;
+
+    li {
+      list-style-type: none !important;
+      list-style-type: decimal;
+      margin-bottom: 5px;
+      font-weight: 400;
+
+      &:before {
+        counter-increment: list1;
+        content: counter(list1) ". ";
+      }
+    }
+
+    ol {
+      padding-left: 20px;
+      counter-reset: list2;
+
+      li:before {
+        counter-increment: list2;
+        content: counter(list1) "." counter(list2) ". ";
+      }
+    }
+  }
+
+  ul.check-list {
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    li {
+      font-size: 18px;
+      line-height: 27px;
+      min-height: 24px;
+      padding-left: 34px;
+      font-weight: 400;
+
+      @include mobile {
+        font-size: 16px;
+      }
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      &:before {
+        width: 24px;
+        height: 24px;
+        background-size: 12px 12px;
+      }
+    }
+  }
+
+  .stepper {
+    padding: 30px 40px;
+    background-color: $white;
+    box-shadow: 8px 14px 80px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+
+    @include mobile {
+      padding: 30px 20px;
+    }
+  }
+
+  .only-text {
+    margin: 40px 0;
+    @extend .extra-body-24;
+
+    @include mobile {
+      margin: 30px 0;
+    }
+  }
+
+  .title-with-text {
+    margin: 40px 0;
+
+    @include mobile {
+      margin: 30px 0;
+    }
+
+    .text:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  .block-with-icon {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: #FFFFFF;
+    box-shadow: 8px 14px 80px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+    padding: 40px 50px;
+
+    @include mobile {
+      padding: 30px 20px;
+    }
+
+    .text, .author {
+      @extend .extra-body-18;
+    }
+
+    .author {
+      align-self: flex-end;
+      color: $colorGray4;
+      margin: 20px 0 0;
+      padding-right: 10px;
+    }
+
+    .icon {
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      position: absolute;
+      width: 71px;
+      height: 71px;
+      left: -4px;
+      top: 7px;
+      transform: translateX(-50%);
+
+      @include mobile {
+        transform: translate(0, -50%);
+        left: 0;
+        top: 0;
+        width: 32px;
+        height: 32px;
+      }
+
+      &:before {
+        content: '';
+        display: block;
+        padding-top: 100%;
+      }
+    }
+
+    .link {
+      margin-top: 7px;
+      margin-bottom: 0;
+      color: #0255D1;
+      text-decoration: none;
+      font-weight: 400;
+    }
+  }
+}
+
+
+

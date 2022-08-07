@@ -1,0 +1,194 @@
+.discount-form {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  background-color: $baseColor;
+  border-radius: 5px;
+
+  .form-block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 654px;
+    padding: 20px 75px 20px 35px;
+    position: relative;
+    z-index: 5;
+
+    @include only-tablet {
+      padding-top: 30px;
+      width: 500px;
+    }
+
+    @include only-mobile {
+      width: 100%;
+      padding: 20px 15px 0 15px;
+    }
+  }
+
+  [data-type="phone"] {
+    .email-field {
+      display: none;
+    }
+
+    .phone-field {
+      display: block;
+    }
+  }
+
+  [data-type="email"] {
+    .email-field {
+      display: block;
+    }
+
+    .phone-field {
+      display: none;
+    }
+  }
+
+
+  form {
+    &.success-form {
+      .form-final {
+        display: flex;
+
+        .success-form {
+          display: block;
+        }
+      }
+    }
+
+    &.error-form {
+      .form-final {
+        display: flex;
+
+        .error-form {
+          display: block;
+        }
+      }
+    }
+  }
+
+
+  .form-final {
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 15px;
+    background-color: $baseColor;
+
+    .success-form, .error-form {
+      display: none;
+    }
+
+    .icon {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      width: 100px;
+      height: 100px;
+      background-image: url('../img/icon/final.svg');
+    }
+  }
+
+  .form-switchers {
+    display: block;
+    margin: 7px 0 25px 0;
+
+    @include mobile {
+      margin-top: 15px;
+    }
+
+    .switcher {
+      display: inline-flex;
+      align-items: center;
+      padding: 9px 14px 7px 14px;
+      background: rgba(102, 102, 102, 0.1);
+      border: 1px solid $white;
+      border-radius: 5px;
+      margin-right: 20px;
+      cursor: pointer;
+      transition: background-color .2s ease-in-out;
+
+
+      &.active {
+        background-color: $white;
+        cursor: default;
+
+        .text {
+          color: $baseColor;
+        }
+
+        .icon {
+          svg {
+            path {
+              fill: $baseColor;
+            }
+          }
+        }
+      }
+
+      @include desktop {
+        &:hover {
+          background-color: $white;
+
+          .text {
+            color: $baseColor;
+          }
+
+          .icon {
+            svg {
+              path {
+                fill: $baseColor;
+              }
+            }
+          }
+        }
+      }
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      .text {
+        @extend .body-16;
+        margin: 0;
+        color: $white;
+      }
+
+      .icon {
+        width: 18px;
+        height: 18px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .girl-photo {
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 517px;
+
+    @include only-tablet {
+      width: 400px;
+      height: 100%;
+      align-self: flex-end;
+    }
+
+    @include only-mobile {
+      display: none;
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      padding-top: 93.42%;
+    }
+  }
+}

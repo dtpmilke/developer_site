@@ -1,0 +1,102 @@
+.chess-block {
+  .text-item {
+    position: relative;
+    z-index: 15;
+    width: 117.6%;
+    padding: 30px 50px;
+    background: #FFFFFF;
+    box-shadow: 8px 14px 80px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+
+    &.with-map-image {
+      width: 100%;
+
+      @include mobile {
+        background: #FFFFFF;
+        padding: 20px 15px 15px 15px;
+      }
+
+      .item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .name, .value {
+          @extend .body-16;
+          margin: 0;
+        }
+
+        .value {
+          margin-right: 20px;
+          font-weight: 700;
+          color: $baseColor;
+        }
+      }
+    }
+
+    .h3 {
+      @include mobile {
+        margin-bottom: 5px;
+      }
+    }
+
+    @include mobile {
+      width: 100%;
+      box-shadow: none;
+      background-color: transparent;
+      padding: 5px 0 0 0;
+    }
+  }
+
+  .image-item {
+    position: relative;
+    z-index: 12;
+    border-radius: 5px;
+    width: 117.6%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-color: #C4C4C4;
+
+    @include mobile {
+      width: 100%;
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      padding-top: 66.26%;
+
+    }
+  }
+
+  .map-item {
+    position: relative;
+    z-index: 12;
+    width: 117.6%;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+    @include mobile {
+      width: 100%;
+
+      &:before {
+        padding-top: 100%;
+      }
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      padding-top: 82.08%;
+    }
+  }
+}

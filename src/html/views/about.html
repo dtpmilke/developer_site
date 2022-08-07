@@ -1,0 +1,136 @@
+<% var data = {
+title: "Developer Site"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<section class="section breadcrumbs">
+    <div class="container">
+        <a href="#" class="link">Home</a>
+        <div class="link active">About us</div>
+    </div>
+</section>
+
+<section class="section no-padding-top">
+    <div class="container">
+        <h1 class="h1">About us</h1>
+        <div class="flex-grid tablet-column">
+            <div class="col w-50-desktop flex-direction-column justify-content-center">
+                <div>
+                    <h2 class="h2 margin-bottom-heading">We Specialize In Quality
+                        Home Renovations </h2>
+                    <p class="body-16">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,
+                        or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum.</p>
+                    <ul class="check-list">
+                        <li>Outstanding property</li>
+                        <li>Professional and experienced human resources</li>
+                        <li>Provide the best services for users</li>
+                        <li>Modern city locations and exceptional lifestyle</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col w-50-desktop flex-direction-column justify-content-center">
+                <div class="clippy-image">
+                    <div class="image-block lozad" data-background="./img/photos/city.png">
+                    </div>
+                    <div class="info-block">
+                        <div class="item first">
+                            <div class="wrapper">
+                                <div class="text">We have been working on the apartment for 10 years</div>
+                                <div class="icon">
+                                    <svg>
+                                        <use xlink:href="./img/icon/sprite.svg#discount"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item second">
+                            <div class="wrapper">
+                                <div class="text">Working with the symbol and reputation of trustworthy trust</div>
+                                <div class="icon">
+                                    <svg>
+                                        <use xlink:href="./img/icon/sprite.svg#friends"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section padding-bottom-mobile">
+    <div class="container">
+        <h2 class="h2 margin-bottom-heading">Meet with our experience team</h2>
+
+        <div class="flex-grid mobile-row tablet-wrap mobile-wrap">
+            <div class="col w-25-desktop w-50-tablet w-50-mobile flex-direction-column">
+                <div class="team-card">
+                    <div class="photo lozad" data-background="./img/photos/human.png">
+
+                    </div>
+                    <div class="description">
+                        <div class="position">FOUNDER</div>
+                        <div class="name">Michael Flick</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col w-25-desktop w-50-tablet w-50-mobile flex-direction-column">
+                <div class="team-card">
+                    <div class="photo lozad" data-background="./img/photos/human.png">
+
+                    </div>
+                    <div class="description">
+                        <div class="position">PROJECT MANAGER</div>
+                        <div class="name">Matteo Pessina</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col w-25-desktop w-50-tablet w-50-mobile flex-direction-column">
+                <div class="team-card">
+                    <div class="photo lozad" data-background="./img/photos/human.png">
+
+                    </div>
+                    <div class="description">
+                        <div class="position">DEVELOPER</div>
+                        <div class="name">Martin Odegard</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col w-25-desktop w-50-tablet w-50-mobile flex-direction-column">
+                <div class="team-card">
+                    <div class="photo lozad" data-background="./img/photos/human.png">
+
+                    </div>
+                    <div class="description">
+                        <div class="position">DEVELOPER</div>
+                        <div class="name">Martin Odegard</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section no-padding-top padding-bottom-x2">
+    <div class="container">
+        <div class="chess-block">
+            <div class="flex-grid tablet-wrap">
+                <div class="col w-50-desktop flex-direction-column justify-content-center">
+                    <div class="text-item">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque eleifend donec pretium vulputate sapien nec sagittis. Proin libero nunc consequat interdum. Condimentum lacinia quis vel eros donec ac. Mauris sit amet massa vitaLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque eleifend donec pretium vulputate sapien nec sagittis. Proin libero nunc consequat interdum. Condimentum lacinia quis vel eros donec ac. Mauris sit amet massa vitaee</p>
+                    </div>
+                </div>
+                <div
+                        class="col w-50-desktop flex-direction-column justify-content-center align-items-end order-top-mobile no-padding-bottom-mobile">
+                    <div class="image-item lozad" data-background="./img/photos/night.jpg">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

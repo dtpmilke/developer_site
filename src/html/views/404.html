@@ -1,0 +1,13 @@
+<% var data = {
+title: "Developer Site"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<section class="section fullscreen no-padding">
+    <div class="display-flex flex-direction-column align-items-center justify-content-center full-height padding-horizontal-35-mobile">
+        <div class="title-404 no-margin-bottom">4<span class="color-main">0</span>4</div>
+        <h2 class="subtitle-404">Page Not Found!</h2>
+        <p class="description-404">We are really sorry but the page you requested is missing
+            or back to go to <a class="color-main font-600" href="/">Homepage</a></p>
+    </div>
+</section>

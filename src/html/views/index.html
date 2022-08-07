@@ -1,0 +1,1031 @@
+<% var data = {
+title: "Developer Site"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<section class="section">
+    <div class="container">
+        <div class="flex-grid tablet-column">
+            <div class="col w-40-desktop flex-direction-column align-items-start justify-content-center relative no-padding-vertical-mobile">
+                <div class="badge">HANDOVER 4Q 2025</div>
+                <div class="address-badge">
+                    <svg class="icon">
+                        <use xlink:href="./img/icon/sprite.svg#location"></use>
+                    </svg>
+                    Jumeirah Lakes Towers
+                </div>
+                <h1 class="h1-main no-margin-top">Luxury villa in rego apartment</h1>
+
+                <div class="hide-mobile">
+                    <p class="body-16">Berkeley Place is a project in Meydan district - the new Downtown of Dubai. It is a 12-storey building featuring studios,
+                        1 and 2 bedroom apartments in the segment of affordable luxury.</p>
+                    <div class="price-text">14,500,000 AED</div>
+                    <a href="#" class="button inline theme-main no-margin-top">View Project</a>
+                </div>
+            </div>
+            <div class="col w-60-desktop flex-direction-column no-padding-top-mobile">
+                <div>
+                    <div class="swiper main-swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img data-src="./img/2.jpg" class="lozad" alt="house_1"/>
+                                <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img data-src="./img/2.jpg" class="lozad" alt="house_2"/>
+                                <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img data-src="./img/2.jpg" class="lozad" alt="house_3"/>
+                                <div class="swiper-lazy-preloader"></div>
+                            </div>
+                        </div>
+                        <!-- If we need navigation buttons -->
+                        <div class="main-navigation">
+                            <div class="main-swiper-prev swiper-button-prev">
+                                <svg class="icon" width="10px" height="20px">
+                                    <use xlink:href="./img/icon/sprite.svg#arrow_l"></use>
+                                </svg>
+                            </div>
+                            <div class="nav-divider"></div>
+                            <div class="main-swiper-next swiper-button-next">
+                                <svg class="icon" width="10px" height="20px">
+                                    <use xlink:href="./img/icon/sprite.svg#arrow_r"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hide-desktop">
+                    <p class="body-16 margin-top-x1">Berkeley Place is a project in Meydan district - the new Downtown of Dubai.
+                        It is a 12-storey building featuring studios,
+                        1 and 2 bedroom apartments in the segment of affordable luxury.</p>
+                    <div class="price-text">14,500,000 AED</div>
+                    <a href="#" class="button inline theme-main no-margin-top">View Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section no-padding-top-mobile featured-section">
+    <div class="container">
+        <div class="heading-with-link">
+            <h2 class="h2 no-margin-bottom-mobile">Featured apartments</h2>
+            <a href="#" class="see-all">
+                <span class="text">See all</span>
+                <span class="icon"></span>
+            </a>
+        </div>
+
+        <div class="featured-slider hide-only-mobile">
+            <div class="swiper featured-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="featured-card">
+                            <div class="photo">
+                                <div class="photo-bg lozad" data-background="./img/photos/test.png"></div>
+                                <div class="badges">
+                                    <div class="badge">HANDOVER 4Q 2025</div>
+                                </div>
+                                <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <div class="info-block">
+                                <div class="price-and-location">
+                                    <a href="#" class="price">From $450,000</a>
+                                    <a href="#" class="location">Jumeirah Lakes Towers</a>
+                                </div>
+                                <a href="#" class="name">Luxury villa</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="featured-card">
+                            <div class="photo">
+                                <div class="photo-bg lozad" data-background="./img/photos/test.png"></div>
+                                <div class="badges">
+                                    <div class="badge theme-green">Ready move in</div>
+                                </div>
+                                <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <div class="info-block">
+                                <div class="price-and-location">
+                                    <a href="#" class="price">From $450,000</a>
+                                    <a href="#" class="location">Jumeirah Lakes Towers</a>
+                                </div>
+                                <a href="#" class="name">Luxury villa</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="featured-card">
+                            <div class="photo">
+                                <div class="photo-bg lozad" data-background="./img/photos/test.png"></div>
+                                <div class="badges">
+                                    <div class="badge theme-gray">Sold out</div>
+                                </div>
+                                <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <div class="info-block">
+                                <div class="price-and-location">
+                                    <a href="#" class="price">From $450,000</a>
+                                    <a href="#" class="location">Jumeirah Lakes Towers</a>
+                                </div>
+                                <a href="#" class="name">Luxury villa</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="featured-card">
+                            <div class="photo">
+                                <div class="photo-bg lozad" data-background="./img/photos/test.png"></div>
+                                <div class="badges">
+                                    <div class="badge theme-green">HANDOVER 4Q 2025</div>
+                                </div>
+                                <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <div class="info-block">
+                                <div class="price-and-location">
+                                    <a href="#" class="price">From $450,000</a>
+                                    <a href="#" class="location">Jumeirah Lakes Towers</a>
+                                </div>
+                                <a href="#" class="name">Luxury villa</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="featured-card">
+                            <div class="photo">
+                                <div class="photo-bg lozad" data-background="./img/photos/test.png"></div>
+                                <div class="badges">
+                                    <div class="badge theme-green">HANDOVER 4Q 2025</div>
+                                </div>
+                                <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <div class="info-block">
+                                <div class="price-and-location">
+                                    <a href="#" class="price">From $450,000</a>
+                                    <a href="#" class="location">Jumeirah Lakes Towers</a>
+                                </div>
+                                <a href="#" class="name">Luxury villa</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev">
+                <svg class="icon" width="10px" height="20px">
+                    <use xlink:href="./img/icon/sprite.svg#arrow_l2"></use>
+                </svg>
+            </div>
+            <div class="swiper-button-next">
+                <svg class="icon" width="10px" height="20px">
+                    <use xlink:href="./img/icon/sprite.svg#arrow_r2"></use>
+                </svg>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="featured-list hide-desktop hide-only-tablet">
+            <div class="featured-card">
+                <div class="photo">
+                    <div class="photo-bg lozad" data-background="./img/photos/test.png"></div>
+                    <div class="badges">
+                        <div class="badge">HANDOVER 4Q 2025</div>
+                    </div>
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
+                <div class="info-block">
+                    <div class="price-and-location">
+                        <a href="#" class="price">From $450,000</a>
+                        <a href="#" class="location">Jumeirah Lakes Towers</a>
+                    </div>
+                    <a href="#" class="name">Luxury villa</a>
+                </div>
+            </div>
+
+            <div class="featured-card">
+                <div class="photo">
+                    <div class="photo-bg lozad" data-background="./img/photos/test.png"></div>
+                    <div class="badges">
+                        <div class="badge theme-green">Ready move in</div>
+                    </div>
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
+                <div class="info-block">
+                    <div class="price-and-location">
+                        <a href="#" class="price">From $450,000</a>
+                        <a href="#" class="location">Jumeirah Lakes Towers</a>
+                    </div>
+                    <a href="#" class="name">Luxury villa</a>
+                </div>
+            </div>
+
+            <div class="featured-card">
+                <div class="photo">
+                    <div class="photo-bg lozad" data-background="./img/photos/test.png"></div>
+                    <div class="badges">
+                        <div class="badge theme-gray">Sold out</div>
+                    </div>
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
+                <div class="info-block">
+                    <div class="price-and-location">
+                        <a href="#" class="price">From $450,000</a>
+                        <a href="#" class="location">Jumeirah Lakes Towers</a>
+                    </div>
+                    <a href="#" class="name">Luxury villa</a>
+                </div>
+            </div>
+
+            <div class="text-align-center">
+                <a href="#" class="button no-margin-top inline theme-main">See more</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section no-padding-top">
+    <div class="container">
+        <div class="flex-grid tablet-column">
+            <div class="col w-50-desktop flex-direction-column justify-content-center">
+                <div class="showmore-block">
+                    <p class="no-margin-bottom">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at mauris vulputate, aliquam tellus a, aliquet felis. In hac habitasse platea dictumst. Praesent tempus tristique orci eget pellentesque. Fusce at velit convallis, porta dui ut, egestas nisl. Maecenas imperdiet, ligula vel suscipit lacinia, orci diam efficitur lorem, ut ornare turpis diam molestie eros. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed purus arcu, rhoncus a interdum vel, gravida quis augue.
+                    </p>
+                    <div class="showmore-content">
+                        <p>Duis sollicitudin sit amet augue ac venenatis. Donec orci nisl, rutrum ac vestibulum nec, dignissim eu nunc. Curabitur vulputate mi nec eros ultricies, at ultricies arcu feugiat. Etiam eget enim in eros rhoncus pellentesque. Phasellus ac urna eget nulla sollicitudin lacinia. Aenean vel elementum sapien. Integer cursus metus sit amet neque scelerisque, ut vestibulum urna sodales. Fusce blandit nunc vel mattis molestie. Fusce vestibulum lectus vel vehicula cursus.
+                        </p>
+                        <p>Quisque viverra elit vitae erat lacinia gravida. Donec magna orci, ullamcorper et imperdiet non, imperdiet ac orci. In at est nec nulla porttitor consectetur a in nibh. Donec ut felis interdum erat porta luctus id in leo. Etiam non orci ipsum. Duis ut ante vitae leo feugiat pretium sed id lectus. Vivamus leo lacus, ornare nec risus vel, tempus ornare dui. Donec a mi risus. Ut lacinia dui id justo tincidunt pharetra. In eget sapien quis libero euismod cursus. Quisque cursus ipsum sed neque consectetur malesuada ut ut neque.
+                        </p>
+                        <p>Maecenas ut justo a magna accumsan aliquam eu quis orci. Fusce gravida ut ex a pellentesque. Donec efficitur auctor sapien sed dictum. Fusce faucibus lorem sed urna auctor, a tempus augue maximus. Quisque euismod lobortis dui sit amet mollis. Sed aliquam maximus urna nec interdum. Aliquam vel volutpat sem, at dictum lectus. Fusce imperdiet nulla sed mauris vulputate, vulputate varius sem efficitur. Morbi a mi id nunc rhoncus placerat. Fusce.
+                        </p>
+                    </div>
+                    <a href="" class="link showmore-button">
+                        <span class="showed">Show less</span>
+                        <span class="notshowed">Read more</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col w-50-desktop flex-direction-column justify-content-center order-top-mobile">
+                <div class="content-img">
+                    <img class="lozad" data-src="./img/photos/house.png" alt="house" width="518" height="255">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section no-padding-top-mobile">
+    <div class="container">
+        <div class="heading-with-link">
+            <h2 class="h2 no-margin-bottom-mobile">Featured townhouses</h2>
+            <a href="#" class="see-all">
+                <span class="text">See all</span>
+                <span class="icon"></span>
+            </a>
+        </div>
+
+        <div class="featured-slider hide-only-mobile">
+            <div class="swiper featured-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="featured-card">
+                            <div class="photo">
+                                <div class="photo-bg lozad" data-background="./img/photos/test.png"></div>
+                                <div class="badges">
+                                    <div class="badge theme-green">HANDOVER 4Q 2025</div>
+                                </div>
+                                <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <div class="info-block">
+                                <div class="price-and-location">
+                                    <a href="#" class="price">From $450,000</a>
+                                    <a href="#" class="location">Jumeirah Lakes Towers</a>
+                                </div>
+                                <a href="#" class="name">Luxury villa</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="featured-card">
+                            <div class="photo">
+                                <div class="photo-bg lozad" data-background="./img/photos/test.png"></div>
+                                <div class="badges">
+                                    <div class="badge theme-green">HANDOVER 4Q 2025</div>
+                                </div>
+                                <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <div class="info-block">
+                                <div class="price-and-location">
+                                    <a href="#" class="price">From $450,000</a>
+                                    <a href="#" class="location">Jumeirah Lakes Towers</a>
+                                </div>
+                                <a href="#" class="name">Luxury villa</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="featured-card">
+                            <div class="photo">
+                                <div class="photo-bg lozad" data-background="./img/photos/test.png"></div>
+                                <div class="badges">
+                                    <div class="badge theme-green">HANDOVER 4Q 2025</div>
+                                </div>
+                                <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <div class="info-block">
+                                <div class="price-and-location">
+                                    <a href="#" class="price">From $450,000</a>
+                                    <a href="#" class="location">Jumeirah Lakes Towers</a>
+                                </div>
+                                <a href="#" class="name">Luxury villa</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="featured-card">
+                            <div class="photo">
+                                <div class="photo-bg lozad" data-background="./img/photos/test.png"></div>
+                                <div class="badges">
+                                    <div class="badge theme-green">HANDOVER 4Q 2025</div>
+                                </div>
+                                <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <div class="info-block">
+                                <div class="price-and-location">
+                                    <a href="#" class="price">From $450,000</a>
+                                    <a href="#" class="location">Jumeirah Lakes Towers</a>
+                                </div>
+                                <a href="#" class="name">Luxury villa</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="featured-card">
+                            <div class="photo">
+                                <div class="photo-bg lozad" data-background="./img/photos/test.png"></div>
+                                <div class="badges">
+                                    <div class="badge theme-green">HANDOVER 4Q 2025</div>
+                                </div>
+                                <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <div class="info-block">
+                                <div class="price-and-location">
+                                    <a href="#" class="price">From $450,000</a>
+                                    <a href="#" class="location">Jumeirah Lakes Towers</a>
+                                </div>
+                                <a href="#" class="name">Luxury villa</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev">
+                <svg class="icon" width="10px" height="20px">
+                    <use xlink:href="./img/icon/sprite.svg#arrow_l2"></use>
+                </svg>
+            </div>
+            <div class="swiper-button-next">
+                <svg class="icon" width="10px" height="20px">
+                    <use xlink:href="./img/icon/sprite.svg#arrow_r2"></use>
+                </svg>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="featured-list hide-desktop hide-only-tablet">
+            <div class="featured-card">
+                <div class="photo">
+                    <div class="photo-bg lozad" data-background="./img/photos/test.png"></div>
+                    <div class="badges">
+                        <div class="badge theme-green">HANDOVER 4Q 2025</div>
+                    </div>
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
+                <div class="info-block">
+                    <div class="price-and-location">
+                        <a href="#" class="price">From $450,000</a>
+                        <a href="#" class="location">Jumeirah Lakes Towers</a>
+                    </div>
+                    <a href="#" class="name">Luxury villa</a>
+                </div>
+            </div>
+
+            <div class="featured-card">
+                <div class="photo">
+                    <div class="photo-bg lozad" data-background="./img/photos/test.png"></div>
+                    <div class="badges">
+                        <div class="badge theme-green">HANDOVER 4Q 2025</div>
+                    </div>
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
+                <div class="info-block">
+                    <div class="price-and-location">
+                        <a href="#" class="price">From $450,000</a>
+                        <a href="#" class="location">Jumeirah Lakes Towers</a>
+                    </div>
+                    <a href="#" class="name">Luxury villa</a>
+                </div>
+            </div>
+
+            <div class="featured-card">
+                <div class="photo">
+                    <div class="photo-bg lozad" data-background="./img/photos/test.png"></div>
+                    <div class="badges">
+                        <div class="badge theme-green">HANDOVER 4Q 2025</div>
+                    </div>
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
+                <div class="info-block">
+                    <div class="price-and-location">
+                        <a href="#" class="price">From $450,000</a>
+                        <a href="#" class="location">Jumeirah Lakes Towers</a>
+                    </div>
+                    <a href="#" class="name">Luxury villa</a>
+                </div>
+            </div>
+
+            <div class="text-align-center">
+                <a href="#" class="button no-margin-top inline theme-main">See more</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section no-padding-top">
+    <div class="container">
+        <div class="flex-grid tablet-column">
+            <div class="col w-50-desktop flex-direction-column justify-content-center">
+                <div class="showmore-block">
+                    <p class="no-margin-bottom">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at mauris vulputate, aliquam tellus a, aliquet felis. In hac habitasse platea dictumst. Praesent tempus tristique orci eget pellentesque. Fusce at velit convallis, porta dui ut, egestas nisl. Maecenas imperdiet, ligula vel suscipit lacinia, orci diam efficitur lorem, ut ornare turpis diam molestie eros. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed purus arcu, rhoncus a interdum vel, gravida quis augue.
+                    </p>
+                    <div class="showmore-content">
+                        <p>Duis sollicitudin sit amet augue ac venenatis. Donec orci nisl, rutrum ac vestibulum nec, dignissim eu nunc. Curabitur vulputate mi nec eros ultricies, at ultricies arcu feugiat. Etiam eget enim in eros rhoncus pellentesque. Phasellus ac urna eget nulla sollicitudin lacinia. Aenean vel elementum sapien. Integer cursus metus sit amet neque scelerisque, ut vestibulum urna sodales. Fusce blandit nunc vel mattis molestie. Fusce vestibulum lectus vel vehicula cursus.
+                        </p>
+                        <p>Quisque viverra elit vitae erat lacinia gravida. Donec magna orci, ullamcorper et imperdiet non, imperdiet ac orci. In at est nec nulla porttitor consectetur a in nibh. Donec ut felis interdum erat porta luctus id in leo. Etiam non orci ipsum. Duis ut ante vitae leo feugiat pretium sed id lectus. Vivamus leo lacus, ornare nec risus vel, tempus ornare dui. Donec a mi risus. Ut lacinia dui id justo tincidunt pharetra. In eget sapien quis libero euismod cursus. Quisque cursus ipsum sed neque consectetur malesuada ut ut neque.
+                        </p>
+                        <p>Maecenas ut justo a magna accumsan aliquam eu quis orci. Fusce gravida ut ex a pellentesque. Donec efficitur auctor sapien sed dictum. Fusce faucibus lorem sed urna auctor, a tempus augue maximus. Quisque euismod lobortis dui sit amet mollis. Sed aliquam maximus urna nec interdum. Aliquam vel volutpat sem, at dictum lectus. Fusce imperdiet nulla sed mauris vulputate, vulputate varius sem efficitur. Morbi a mi id nunc rhoncus placerat. Fusce.
+                        </p>
+                    </div>
+                    <a href="" class="link showmore-button">
+                        <span class="showed">Show less</span>
+                        <span class="notshowed">Read more</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col w-50-desktop flex-direction-column justify-content-center order-top-mobile">
+                <div class="content-img">
+                    <img class="lozad" data-src="./img/photos/house.png" alt="house" width="518" height="255">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section no-padding-top-mobile">
+    <div class="container">
+        <div class="heading-with-link">
+            <h2 class="h2 no-margin-bottom-mobile">Featured penthouses</h2>
+            <a href="#" class="see-all">
+                <span class="text">See all</span>
+                <span class="icon"></span>
+            </a>
+        </div>
+
+        <div class="featured-slider hide-only-mobile">
+            <div class="swiper featured-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="featured-card">
+                            <div class="photo">
+                                <div class="photo-bg lozad" data-background="./img/photos/test.png"></div>
+                                <div class="badges">
+                                    <div class="badge theme-green">HANDOVER 4Q 2025</div>
+                                </div>
+                                <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <div class="info-block">
+                                <div class="price-and-location">
+                                    <a href="#" class="price">From $450,000</a>
+                                    <a href="#" class="location">Jumeirah Lakes Towers</a>
+                                </div>
+                                <a href="#" class="name">Luxury villa</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="featured-card">
+                            <div class="photo">
+                                <div class="photo-bg lozad" data-background="./img/photos/test.png"></div>
+                                <div class="badges">
+                                    <div class="badge theme-green">HANDOVER 4Q 2025</div>
+                                </div>
+                                <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <div class="info-block">
+                                <div class="price-and-location">
+                                    <a href="#" class="price">From $450,000</a>
+                                    <a href="#" class="location">Jumeirah Lakes Towers</a>
+                                </div>
+                                <a href="#" class="name">Luxury villa</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="featured-card">
+                            <div class="photo">
+                                <div class="photo-bg lozad" data-background="./img/photos/test.png"></div>
+                                <div class="badges">
+                                    <div class="badge theme-green">HANDOVER 4Q 2025</div>
+                                </div>
+                                <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <div class="info-block">
+                                <div class="price-and-location">
+                                    <a href="#" class="price">From $450,000</a>
+                                    <a href="#" class="location">Jumeirah Lakes Towers</a>
+                                </div>
+                                <a href="#" class="name">Luxury villa</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="featured-card">
+                            <div class="photo">
+                                <div class="photo-bg lozad" data-background="./img/photos/test.png"></div>
+                                <div class="badges">
+                                    <div class="badge theme-green">HANDOVER 4Q 2025</div>
+                                </div>
+                                <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <div class="info-block">
+                                <div class="price-and-location">
+                                    <a href="#" class="price">From $450,000</a>
+                                    <a href="#" class="location">Jumeirah Lakes Towers</a>
+                                </div>
+                                <a href="#" class="name">Luxury villa</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="featured-card">
+                            <div class="photo">
+                                <div class="photo-bg lozad" data-background="./img/photos/test.png"></div>
+                                <div class="badges">
+                                    <div class="badge theme-green">HANDOVER 4Q 2025</div>
+                                </div>
+                                <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <div class="info-block">
+                                <div class="price-and-location">
+                                    <a href="#" class="price">From $450,000</a>
+                                    <a href="#" class="location">Jumeirah Lakes Towers</a>
+                                </div>
+                                <a href="#" class="name">Luxury villa</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev">
+                <svg class="icon" width="10px" height="20px">
+                    <use xlink:href="./img/icon/sprite.svg#arrow_l2"></use>
+                </svg>
+            </div>
+            <div class="swiper-button-next">
+                <svg class="icon" width="10px" height="20px">
+                    <use xlink:href="./img/icon/sprite.svg#arrow_r2"></use>
+                </svg>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="featured-list hide-desktop hide-only-tablet">
+            <div class="featured-card">
+                <div class="photo">
+                    <div class="photo-bg lozad" data-background="./img/photos/test.png"></div>
+                    <div class="badges">
+                        <div class="badge theme-green">HANDOVER 4Q 2025</div>
+                    </div>
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
+                <div class="info-block">
+                    <div class="price-and-location">
+                        <a href="#" class="price">From $450,000</a>
+                        <a href="#" class="location">Jumeirah Lakes Towers</a>
+                    </div>
+                    <a href="#" class="name">Luxury villa</a>
+                </div>
+            </div>
+
+            <div class="featured-card">
+                <div class="photo">
+                    <div class="photo-bg lozad" data-background="./img/photos/test.png"></div>
+                    <div class="badges">
+                        <div class="badge theme-green">HANDOVER 4Q 2025</div>
+                    </div>
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
+                <div class="info-block">
+                    <div class="price-and-location">
+                        <a href="#" class="price">From $450,000</a>
+                        <a href="#" class="location">Jumeirah Lakes Towers</a>
+                    </div>
+                    <a href="#" class="name">Luxury villa</a>
+                </div>
+            </div>
+
+            <div class="featured-card">
+                <div class="photo">
+                    <div class="photo-bg lozad" data-background="./img/photos/test.png"></div>
+                    <div class="badges">
+                        <div class="badge theme-green">HANDOVER 4Q 2025</div>
+                    </div>
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
+                <div class="info-block">
+                    <div class="price-and-location">
+                        <a href="#" class="price">From $450,000</a>
+                        <a href="#" class="location">Jumeirah Lakes Towers</a>
+                    </div>
+                    <a href="#" class="name">Luxury villa</a>
+                </div>
+            </div>
+
+            <div class="text-align-center">
+                <a href="#" class="button no-margin-top inline theme-main">See more</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section no-padding-top">
+    <div class="container">
+        <div class="flex-grid tablet-column">
+            <div class="col w-50-desktop flex-direction-column justify-content-center">
+                <div class="showmore-block">
+                    <p class="no-margin-bottom">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at mauris vulputate, aliquam tellus a, aliquet felis. In hac habitasse platea dictumst. Praesent tempus tristique orci eget pellentesque. Fusce at velit convallis, porta dui ut, egestas nisl. Maecenas imperdiet, ligula vel suscipit lacinia, orci diam efficitur lorem, ut ornare turpis diam molestie eros. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed purus arcu, rhoncus a interdum vel, gravida quis augue.
+                    </p>
+                    <div class="showmore-content">
+                        <p>Duis sollicitudin sit amet augue ac venenatis. Donec orci nisl, rutrum ac vestibulum nec, dignissim eu nunc. Curabitur vulputate mi nec eros ultricies, at ultricies arcu feugiat. Etiam eget enim in eros rhoncus pellentesque. Phasellus ac urna eget nulla sollicitudin lacinia. Aenean vel elementum sapien. Integer cursus metus sit amet neque scelerisque, ut vestibulum urna sodales. Fusce blandit nunc vel mattis molestie. Fusce vestibulum lectus vel vehicula cursus.
+                        </p>
+                        <p>Quisque viverra elit vitae erat lacinia gravida. Donec magna orci, ullamcorper et imperdiet non, imperdiet ac orci. In at est nec nulla porttitor consectetur a in nibh. Donec ut felis interdum erat porta luctus id in leo. Etiam non orci ipsum. Duis ut ante vitae leo feugiat pretium sed id lectus. Vivamus leo lacus, ornare nec risus vel, tempus ornare dui. Donec a mi risus. Ut lacinia dui id justo tincidunt pharetra. In eget sapien quis libero euismod cursus. Quisque cursus ipsum sed neque consectetur malesuada ut ut neque.
+                        </p>
+                        <p>Maecenas ut justo a magna accumsan aliquam eu quis orci. Fusce gravida ut ex a pellentesque. Donec efficitur auctor sapien sed dictum. Fusce faucibus lorem sed urna auctor, a tempus augue maximus. Quisque euismod lobortis dui sit amet mollis. Sed aliquam maximus urna nec interdum. Aliquam vel volutpat sem, at dictum lectus. Fusce imperdiet nulla sed mauris vulputate, vulputate varius sem efficitur. Morbi a mi id nunc rhoncus placerat. Fusce.
+                        </p>
+                    </div>
+                    <a href="" class="link showmore-button">
+                        <span class="showed">Show less</span>
+                        <span class="notshowed">Read more</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col w-50-desktop flex-direction-column justify-content-center order-top-mobile">
+                <div class="content-img">
+                    <img class="lozad" data-src="./img/photos/house.png" alt="house" width="518" height="255">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section no-padding-top-mobile">
+    <div class="container">
+        <div class="heading-with-link">
+            <h2 class="h2 no-margin-bottom-mobile">Featured villas</h2>
+            <a href="#" class="see-all">
+                <span class="text">See all</span>
+                <span class="icon"></span>
+            </a>
+        </div>
+
+        <div class="featured-slider hide-only-mobile">
+            <div class="swiper featured-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="featured-card">
+                            <div class="photo">
+                                <div class="photo-bg lozad" data-background="./img/photos/test.png"></div>
+                                <div class="badges">
+                                    <div class="badge theme-green">HANDOVER 4Q 2025</div>
+                                </div>
+                                <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <div class="info-block">
+                                <div class="price-and-location">
+                                    <a href="#" class="price">From $450,000</a>
+                                    <a href="#" class="location">Jumeirah Lakes Towers</a>
+                                </div>
+                                <a href="#" class="name">Luxury villa</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="featured-card">
+                            <div class="photo">
+                                <div class="photo-bg lozad" data-background="./img/photos/test.png"></div>
+                                <div class="badges">
+                                    <div class="badge theme-green">HANDOVER 4Q 2025</div>
+                                </div>
+                                <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <div class="info-block">
+                                <div class="price-and-location">
+                                    <a href="#" class="price">From $450,000</a>
+                                    <a href="#" class="location">Jumeirah Lakes Towers</a>
+                                </div>
+                                <a href="#" class="name">Luxury villa</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="featured-card">
+                            <div class="photo">
+                                <div class="photo-bg lozad" data-background="./img/photos/test.png"></div>
+                                <div class="badges">
+                                    <div class="badge theme-green">HANDOVER 4Q 2025</div>
+                                </div>
+                                <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <div class="info-block">
+                                <div class="price-and-location">
+                                    <a href="#" class="price">From $450,000</a>
+                                    <a href="#" class="location">Jumeirah Lakes Towers</a>
+                                </div>
+                                <a href="#" class="name">Luxury villa</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="featured-card">
+                            <div class="photo">
+                                <div class="photo-bg lozad" data-background="./img/photos/test.png"></div>
+                                <div class="badges">
+                                    <div class="badge theme-green">HANDOVER 4Q 2025</div>
+                                </div>
+                                <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <div class="info-block">
+                                <div class="price-and-location">
+                                    <a href="#" class="price">From $450,000</a>
+                                    <a href="#" class="location">Jumeirah Lakes Towers</a>
+                                </div>
+                                <a href="#" class="name">Luxury villa</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="featured-card">
+                            <div class="photo">
+                                <div class="photo-bg lozad" data-background="./img/photos/test.png"></div>
+                                <div class="badges">
+                                    <div class="badge theme-green">HANDOVER 4Q 2025</div>
+                                </div>
+                                <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <div class="info-block">
+                                <div class="price-and-location">
+                                    <a href="#" class="price">From $450,000</a>
+                                    <a href="#" class="location">Jumeirah Lakes Towers</a>
+                                </div>
+                                <a href="#" class="name">Luxury villa</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev">
+                <svg class="icon" width="10px" height="20px">
+                    <use xlink:href="./img/icon/sprite.svg#arrow_l2"></use>
+                </svg>
+            </div>
+            <div class="swiper-button-next">
+                <svg class="icon" width="10px" height="20px">
+                    <use xlink:href="./img/icon/sprite.svg#arrow_r2"></use>
+                </svg>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="featured-list hide-desktop hide-only-tablet">
+            <div class="featured-card">
+                <div class="photo">
+                    <div class="photo-bg lozad" data-background="./img/photos/test.png"></div>
+                    <div class="badges">
+                        <div class="badge theme-green">HANDOVER 4Q 2025</div>
+                    </div>
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
+                <div class="info-block">
+                    <div class="price-and-location">
+                        <a href="#" class="price">From $450,000</a>
+                        <a href="#" class="location">Jumeirah Lakes Towers</a>
+                    </div>
+                    <a href="#" class="name">Luxury villa</a>
+                </div>
+            </div>
+
+            <div class="featured-card">
+                <div class="photo">
+                    <div class="photo-bg lozad" data-background="./img/photos/test.png"></div>
+                    <div class="badges">
+                        <div class="badge theme-green">HANDOVER 4Q 2025</div>
+                    </div>
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
+                <div class="info-block">
+                    <div class="price-and-location">
+                        <a href="#" class="price">From $450,000</a>
+                        <a href="#" class="location">Jumeirah Lakes Towers</a>
+                    </div>
+                    <a href="#" class="name">Luxury villa</a>
+                </div>
+            </div>
+
+            <div class="featured-card">
+                <div class="photo">
+                    <div class="photo-bg lozad" data-background="./img/photos/test.png"></div>
+                    <div class="badges">
+                        <div class="badge theme-green">HANDOVER 4Q 2025</div>
+                    </div>
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
+                <div class="info-block">
+                    <div class="price-and-location">
+                        <a href="#" class="price">From $450,000</a>
+                        <a href="#" class="location">Jumeirah Lakes Towers</a>
+                    </div>
+                    <a href="#" class="name">Luxury villa</a>
+                </div>
+            </div>
+
+            <div class="text-align-center">
+                <a href="#" class="button no-margin-top inline theme-main">See more</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section no-padding-top">
+    <div class="container">
+        <div class="flex-grid tablet-column">
+            <div class="col w-50-desktop flex-direction-column justify-content-center">
+                <div class="showmore-block">
+                    <p class="no-margin-bottom">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at mauris vulputate, aliquam tellus a, aliquet felis. In hac habitasse platea dictumst. Praesent tempus tristique orci eget pellentesque. Fusce at velit convallis, porta dui ut, egestas nisl. Maecenas imperdiet, ligula vel suscipit lacinia, orci diam efficitur lorem, ut ornare turpis diam molestie eros. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed purus arcu, rhoncus a interdum vel, gravida quis augue.
+                    </p>
+                    <div class="showmore-content">
+                        <p>Duis sollicitudin sit amet augue ac venenatis. Donec orci nisl, rutrum ac vestibulum nec, dignissim eu nunc. Curabitur vulputate mi nec eros ultricies, at ultricies arcu feugiat. Etiam eget enim in eros rhoncus pellentesque. Phasellus ac urna eget nulla sollicitudin lacinia. Aenean vel elementum sapien. Integer cursus metus sit amet neque scelerisque, ut vestibulum urna sodales. Fusce blandit nunc vel mattis molestie. Fusce vestibulum lectus vel vehicula cursus.
+                        </p>
+                        <p>Quisque viverra elit vitae erat lacinia gravida. Donec magna orci, ullamcorper et imperdiet non, imperdiet ac orci. In at est nec nulla porttitor consectetur a in nibh. Donec ut felis interdum erat porta luctus id in leo. Etiam non orci ipsum. Duis ut ante vitae leo feugiat pretium sed id lectus. Vivamus leo lacus, ornare nec risus vel, tempus ornare dui. Donec a mi risus. Ut lacinia dui id justo tincidunt pharetra. In eget sapien quis libero euismod cursus. Quisque cursus ipsum sed neque consectetur malesuada ut ut neque.
+                        </p>
+                        <p>Maecenas ut justo a magna accumsan aliquam eu quis orci. Fusce gravida ut ex a pellentesque. Donec efficitur auctor sapien sed dictum. Fusce faucibus lorem sed urna auctor, a tempus augue maximus. Quisque euismod lobortis dui sit amet mollis. Sed aliquam maximus urna nec interdum. Aliquam vel volutpat sem, at dictum lectus. Fusce imperdiet nulla sed mauris vulputate, vulputate varius sem efficitur. Morbi a mi id nunc rhoncus placerat. Fusce.
+                        </p>
+                    </div>
+                    <a href="" class="link showmore-button">
+                        <span class="showed">Show less</span>
+                        <span class="notshowed">Read more</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col w-50-desktop flex-direction-column justify-content-center order-top-mobile">
+                <div class="content-img">
+                    <img class="lozad" data-src="./img/photos/house.png" alt="house" width="518" height="255">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section padding-bottom-mobile">
+    <div class="container">
+        <h2 class="h2 margin-bottom-heading">Meet with our experience team</h2>
+
+        <div class="flex-grid mobile-row tablet-wrap mobile-wrap">
+            <div class="col w-25-desktop w-50-tablet w-50-mobile flex-direction-column">
+                <div class="team-card">
+                    <div class="photo lozad" data-background="./img/photos/human.png">
+
+                    </div>
+                    <div class="description">
+                        <div class="position">FOUNDER</div>
+                        <div class="name">Michael Flick</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col w-25-desktop w-50-tablet w-50-mobile flex-direction-column">
+                <div class="team-card">
+                    <div class="photo lozad" data-background="./img/photos/human.png">
+
+                    </div>
+                    <div class="description">
+                        <div class="position">PROJECT MANAGER</div>
+                        <div class="name">Matteo Pessina</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col w-25-desktop w-50-tablet w-50-mobile flex-direction-column">
+                <div class="team-card">
+                    <div class="photo lozad" data-background="./img/photos/human.png">
+
+                    </div>
+                    <div class="description">
+                        <div class="position">DEVELOPER</div>
+                        <div class="name">Martin Odegard</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col w-25-desktop w-50-tablet w-50-mobile flex-direction-column">
+                <div class="team-card">
+                    <div class="photo lozad" data-background="./img/photos/human.png">
+
+                    </div>
+                    <div class="description">
+                        <div class="position">DEVELOPER</div>
+                        <div class="name">Martin Odegard</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="flex-grid">
+            <div class="col w-50-desktop flex-direction-column justify-content-center">
+                <div>
+                    <h2 class="h2 margin-bottom-heading">We Specialize In Quality
+                        Home Renovations </h2>
+                    <p class="body-16">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,
+                        or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum.</p>
+                    <ul class="check-list">
+                        <li>Outstanding property</li>
+                        <li>Professional and experienced human resources</li>
+                        <li>Provide the best services for users</li>
+                        <li>Modern city locations and exceptional lifestyle</li>
+                    </ul>
+                    <a href="#" class="button inline theme-main no-margin-top">Read more</a>
+                </div>
+            </div>
+            <div class="col w-50-desktop flex-direction-column justify-content-center">
+                <div class="clippy-image">
+                    <div class="image-block lozad" data-background="./img/photos/city.png">
+                    </div>
+                    <div class="info-block">
+                        <div class="item first">
+                            <div class="wrapper">
+                                <div class="text">We have been working on the apartment for 10 years</div>
+                                <div class="icon">
+                                    <svg>
+                                        <use xlink:href="./img/icon/sprite.svg#discount"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item second">
+                            <div class="wrapper">
+                                <div class="text">Working with the symbol and reputation of trustworthy trust</div>
+                                <div class="icon">
+                                    <svg>
+                                        <use xlink:href="./img/icon/sprite.svg#friends"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section padding-bottom-x2">
+    <div class="container">
+        <div class="heading-with-link">
+            <h2 class="h2 no-margin-bottom-mobile">Blog</h2>
+            <a href="#" class="see-all">
+                <span class="text">See all</span>
+                <span class="icon"></span>
+            </a>
+        </div>
+        <div class="flex-grid">
+            <div class="col w-50-desktop w-50-tablet flex-direction-column">
+                <a href="#" class="blog-card">
+                    <div class="photo lozad" data-background="./img/photos/blog.png"></div>
+                    <div class="date">DECEMBER 06, 2021</div>
+                    <div class="name">Agency is the capacity of an actor to act in a given</div>
+                </a>
+            </div>
+            <div class="col w-50-desktop w-50-tablet flex-direction-column">
+                <a href="#" class="blog-card">
+                    <div class="photo lozad" data-background="./img/photos/blog.png"></div>
+                    <div class="date">DECEMBER 06, 2021</div>
+                    <div class="name">What to do a year before buying apartment</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

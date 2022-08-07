@@ -1,0 +1,54 @@
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include mobile {
+    justify-content: flex-start;
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: $baseColor;
+    margin: 0 6.5px;
+    transition: background-color .2s ease-in-out;
+
+    &.whatsapp {
+      background-color: $colorWhatsapp;
+    }
+
+    &.telegram {
+      background-color: $colorTelegram;
+    }
+
+    &:active, &:hover {
+      background-color: $baseColorHover;
+
+      &.whatsapp {
+        background-color: $colorWhatsappHover;
+      }
+
+      &.telegram {
+        background-color: $colorTelegramHover;
+      }
+    }
+
+    .icon {
+      width: 24px;
+      height: 24px;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

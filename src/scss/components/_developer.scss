@@ -1,0 +1,188 @@
+.developer-img {
+  img {
+    max-width: 268px;
+    margin-left: auto;
+  }
+}
+
+.developer-card {
+  display: flex;
+  border-radius: 5px;
+  position: relative;
+  z-index: 5;
+  transition: filter .2s ease-in-out;
+  margin-bottom: 30px;
+  overflow: hidden;
+
+  //&:last-of-type {
+  //  margin-bottom: 0;
+  //}
+
+  @include desktop {
+    &:hover {
+      filter: drop-shadow(8px 22px 18px rgba(0, 0, 0, .1));
+    }
+  }
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  .info-block {
+    padding: 25px 30px;
+    width: 50%;
+    background: $white;
+
+    @include mobile {
+      width: 100%;
+      padding: 15px 20px;
+    }
+
+    .top-block {
+      display: flex;
+      justify-content: space-between;
+
+      @include mobile {
+        flex-direction: column;
+      }
+    }
+
+    .text {
+      margin: 10px 0 20px 0;
+
+      @include mobile {
+        margin: 15px 0 15px 0;
+      }
+    }
+
+    .name-with-location {
+      .name {
+        display: block;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 5px;
+        color: $black;
+      }
+
+      .location {
+        display: inline-flex;
+        align-items: center;
+        font-size: 14px;
+        line-height: 19px;
+        margin-bottom: 10px;
+        color: $colorGray;
+
+        &:before {
+          content: '';
+          display: inline-flex;
+          width: 14px;
+          height: 14px;
+          background-image: url('../img/icon/location_2.svg');
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center center;
+          margin-right: 5px;
+        }
+      }
+    }
+
+    .payment {
+      text-align: right;
+
+      @include mobile {
+        text-align: left;
+      }
+
+      .from {
+        font-size: 14px;
+        line-height: 18px;
+        color: $colorGray;
+        margin-bottom: 5px;
+      }
+
+      .value {
+        @extend .h4;
+        color: $baseColor;
+        margin: 0;
+      }
+    }
+
+    .props {
+      .h-props {
+        @extend .h5;
+        margin: 0 0 12px 0;
+      }
+
+      .item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .name {
+          @extend .body-16;
+          margin: 0;
+        }
+
+        .value {
+          @extend .body-16;
+          margin: 0;
+
+          @include mobile {
+            flex-wrap: nowrap;
+            white-space: nowrap;
+          }
+
+          span {
+            font-weight: 700;
+            color: $baseColor
+          }
+        }
+      }
+    }
+  }
+
+  .image-block {
+    position: relative;
+    z-index: 5;
+    width: 50%;
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 23%, 84% 0);
+    background-color: $colorGray2;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+
+    .badges {
+      display: block;
+      position: absolute;
+      padding: 15px;
+      left: 0;
+      right: 0;
+      top: 0;
+
+      @include mobile {
+        padding: 10px;
+      }
+    }
+
+    @include mobile {
+      order: -1;
+      width: 100%;
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      padding-top: 63.04%;
+
+      @include mobile {
+        padding-top: 63.28%;
+      }
+    }
+  }
+}

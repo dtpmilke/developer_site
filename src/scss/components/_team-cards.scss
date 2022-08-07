@@ -1,0 +1,66 @@
+.team-card {
+  display: block;
+  margin-bottom: 20px;
+
+  @include only-mobile {
+    margin-bottom: 0;
+  }
+
+  .photo {
+    padding-top: 110%;
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 17%, 79% 0);
+    border-radius: 5px;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+
+  .description {
+    padding: 15px;
+    background-color: $white;
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 16%, 93% 0);
+    box-shadow: 8px 14px 80px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+    max-width: 220px;
+    margin: -35px auto 0 auto;
+    text-align: center;
+    text-decoration: none;
+
+    @include only-tablet {
+      margin-top: -35px;
+    }
+
+    @include only-mobile {
+      max-width: 139px;
+      padding: 8px 8px 6px 8px;
+    }
+
+    .position {
+      font-family: $fontAccent;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 19px;
+      margin-bottom: 4px;
+      color: $colorGray;
+      text-transform: uppercase;
+
+      @include only-mobile {
+        font-size: 10px;
+        line-height: 14px;
+      }
+    }
+
+    .name {
+      @extend .h5;
+      margin: 0;
+      letter-spacing: 0.04em;
+      text-transform: none;
+
+      @include only-mobile {
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 400;
+      }
+    }
+  }
+}

@@ -1,0 +1,289 @@
+footer {
+  background-color: $black;
+
+  .make-for-us {
+    @extend .body-16;
+    font-weight: 400;
+    color: $colorGray2;
+    margin-bottom: 5px;
+    line-height: 31px;
+    transition: opacity .2s ease-in-out;
+
+    .bold {
+      font-weight: 700;
+      color: $white;
+
+      @include mobile {
+        display: none;
+      }
+    }
+
+    @include desktop {
+      &:hover {
+        .text-item {
+          color: $baseColor;
+        }
+      }
+    }
+
+    @include mobile {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 15px;
+      text-align: center;
+      letter-spacing: 0.055em;
+      border: 1px solid $white;
+      border-radius: 5px;
+      margin-bottom: 10px;
+
+      span {
+        color: $white;
+        line-height: 24px;
+      }
+    }
+
+    .icon {
+      display: none;
+      width: 16px;
+      height: 16px;
+      margin-right: 12px;
+
+      @include mobile {
+        display: inline-flex;
+      }
+    }
+  }
+
+
+  .our-address {
+    display: block;
+    position: relative;
+    z-index: 5;
+    padding-left: 21px;
+    @extend .body-16;
+    font-weight: 400;
+    color: $colorGray2;
+    line-height: 29px;
+
+    .icon {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 8px;
+      width: 12.75px;
+      height: 16px;
+    }
+
+    @include desktop {
+      &:hover {
+        color: $baseColor;
+      }
+    }
+
+    @include mobile {
+      margin-top: 15px;
+    }
+  }
+
+  .footer-inner {
+    padding: 20px 0;
+  }
+
+  .logo {
+    height: 16px;
+    margin-top: 5px;
+    max-width: 275px;
+    margin-bottom: 25px;
+
+    @include mobile {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .footer-toggle-column {
+    display: block;
+    position: relative;
+    z-index: 5;
+
+    @include mobile {
+      flex-grow: 1;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      margin-bottom: 15px;
+    }
+
+    .heading {
+      @extend .h4-pages;
+      color: $white;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      @include desktop {
+        margin-top: 0;
+      }
+    }
+
+    .footer-column-toggler {
+      display: block;
+      position: absolute;
+      top: 25px;
+      right: 0;
+      width: 16px;
+      height: 16px;
+      background-image: url('../img/icon/arrow_down.svg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      @include desktop {
+        display: none;
+      }
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: -50%;
+        right: -50%;
+        top: -50%;
+        bottom: -50%;
+      }
+    }
+
+    .item {
+      display: block;
+      @extend .body-16;
+      color: $colorGray2;
+      line-height: 31px;
+      transition: opacity .2s ease-in-out;
+      margin-bottom: 5px;
+
+      @include desktop {
+        &:hover {
+          color: $baseColor;
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 10px;
+      }
+    }
+
+    .list {
+      @include mobile {
+        display: none;
+      }
+    }
+
+    &.opened {
+      .footer-column-toggler {
+        transform: rotate(180deg);
+      }
+
+      .list {
+        @include mobile {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .socials {
+    margin-top: 30px;
+    justify-content: flex-start;
+
+    @include mobile {
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .item {
+      width: 40px;
+      height: 40px;
+      margin: 0 5px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.1);
+
+      .icon {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+
+  .copyright {
+    @extend .body-16;
+    color: $colorGray2;
+    line-height: 31px;
+    margin-bottom: 0;
+
+    @include mobile {
+      max-width: 200px;
+    }
+  }
+
+  .terms {
+    display: block;
+    margin-right: auto;
+    margin-left: 15px;
+    @extend .body-16;
+    color: $colorGray2;
+    line-height: 31px;
+    margin-bottom: 0;
+
+    @include mobile {
+      margin-left: 0;
+    }
+
+    .v-divide {
+      margin: 0 3px;
+    }
+
+    @include desktop {
+      a:hover {
+        color: $baseColor;
+      }
+    }
+
+    * {
+      color: $colorGray2;
+    }
+  }
+
+  .logolab {
+    width: 28px;
+    height: 28px;
+    margin-left: 15px;
+    text-decoration: none;
+    transition: opacity .2s ease-in-out;
+    cursor: pointer;
+
+    @include desktop {
+      &:hover {
+        opacity: .6;
+      }
+    }
+
+    @include mobile {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  .footer-bottom {
+    display: flex;
+    position: relative;
+    z-index: 5;
+    align-items: center;
+    justify-content: space-between;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: flex-start;
+      padding-right: 35px;
+    }
+  }
+
+}

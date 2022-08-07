@@ -1,0 +1,46 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  background-color: $baseColor;
+  color: $white;
+  font-family: $fontBase;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  border-radius: 3px;
+  text-transform: uppercase;
+  margin-right: 10px;
+
+  &.theme-green {
+    background-color: $colorWhatsapp;
+  }
+
+  &.theme-gray {
+    background-color: $colorGray;
+  }
+
+  @include mobile {
+    font-size: 8px;
+    line-height: 10px;
+  }
+}
+
+.address-badge {
+  display: inline-flex;
+  align-items: center;
+  font-family: $fontBase;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: $colorGray;
+  margin: 10px 0;
+
+  .icon {
+    width: 12px;
+    height: 14px;
+    margin-right: 9px;
+  }
+}
